@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Reserve Your Trial · Dramawize</title>
 <meta name="description" content="Reserve a trial drama class with Dramawize. Tell us a little about your child and we'll be in touch within 24 hours." />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="dramawize-logo.png" />
+<link rel="apple-touch-icon" href="dramawize-logo.png" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Reserve Your Trial · Dramawize" />
+<meta property="og:description" content="Tell us about your young performer and we'll be in touch within 24 hours with your trial-class slot." />
+<meta property="og:image" content="https://dramawize.com/dramawize-logo.png" />
+<meta property="og:url" content="https://dramawize.com/register.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -36,10 +49,10 @@
   /* Nav */
   nav{padding:24px 0;background:rgba(254,246,232,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(233,222,197,.5);position:sticky;top:0;z-index:10}
   .nav{display:flex;align-items:center;justify-content:space-between}
-  .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:25px;letter-spacing:-.6px}
-  .brand .mark{width:36px;height:36px;border-radius:14px;background:linear-gradient(135deg,var(--coral) 0%,var(--mustard) 100%);position:relative;overflow:hidden}
-  .brand .mark::before{content:"";position:absolute;width:14px;height:14px;border-radius:50%;background:var(--sage-soft);top:7px;left:7px;box-shadow:0 0 0 2px var(--bg-2)}
-  .brand .mark::after{content:"";position:absolute;width:6px;height:6px;border-radius:50%;background:var(--bg-2);bottom:8px;right:8px}
+  .brand{display:flex;align-items:center;text-decoration:none;line-height:0}
+  .brand-logo{height:48px;width:auto;display:block;transition:transform .25s}
+  .brand:hover .brand-logo{transform:scale(1.03)}
+  @media(max-width:760px){.brand-logo{height:38px}}
   .back{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--ink-soft);transition:color .2s}
   .back:hover{color:var(--coral)}
   .back svg{width:16px;height:16px}
@@ -159,7 +172,7 @@
 
 <nav>
   <div class="wrap nav">
-    <a href="index.html" class="brand"><span class="mark"></span>Dramawize</a>
+    <a href="index.html" class="brand" aria-label="Dramawize home"><img src="dramawize-logo.png" alt="Dramawize" class="brand-logo" /></a>
     <a href="index.html" class="back">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
       Back to home
