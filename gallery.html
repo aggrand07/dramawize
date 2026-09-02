@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Inside a Class — Photo Gallery | DramaWize, The Greens Dubai</title>
+<meta name="description" content="A look inside a DramaWize drama class in The Greens, Dubai: hands, props, stories and movement. We photograph the work, not the faces — children's privacy first." />
+<link rel="canonical" href="https://dramawize.com/gallery.html" />
+<meta name="robots" content="index, follow" />
+<link rel="icon" type="image/png" href="dramawize-logo-square.png" />
+<link rel="apple-touch-icon" href="dramawize-logo-square.png" />
+<meta property="og:title" content="Inside a DramaWize Class | The Greens, Dubai" />
+<meta property="og:description" content="A day at DramaWize in twelve moments. Drama classes for kids 4–14 in The Greens, Dubai." />
+<meta property="og:image" content="https://dramawize.com/day-at-dramawize-story.jpg" />
+<meta property="og:url" content="https://dramawize.com/gallery.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#FEF6E8;--bg-2:#FFFDF6;--ink:#1A2421;--ink-soft:#46524F;--muted:#8C9094;
+    --sage:#4A6B47;--sage-soft:#C5D6BD;--coral:#E97A5C;--coral-soft:#F8CDB8;
+    --mustard:#D9A93A;--mustard-soft:#F2DB97;--rule:#E9DEC5;
+    --display:'Fraunces', Georgia, serif;--sans:'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;width:100%}
+
+  /* Nav */
+  nav{padding:24px 0;background:rgba(254,246,232,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(233,222,197,.5);position:sticky;top:0;z-index:10}
+  .nav{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;line-height:0}
+  .brand-logo{height:48px;width:auto;display:block;transition:transform .25s}
+  .brand:hover .brand-logo{transform:scale(1.03)}
+  @media(max-width:760px){.brand-logo{height:38px}}
+  .back{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--ink-soft);transition:color .2s}
+  .back:hover{color:var(--coral)}
+  .back svg{width:16px;height:16px}
+
+  /* Hero */
+  .hero{padding:80px 0 40px;position:relative;overflow:hidden;text-align:center}
+  .hero::before{content:"";position:absolute;top:-220px;right:-180px;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,var(--mustard-soft),transparent 70%);opacity:.55;pointer-events:none}
+  .hero::after{content:"";position:absolute;bottom:-260px;left:-180px;width:560px;height:560px;border-radius:50%;background:radial-gradient(closest-side,var(--coral-soft),transparent 70%);opacity:.45;pointer-events:none}
+  .hero-inner{position:relative;max-width:720px;margin:0 auto}
+  .label{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;letter-spacing:3px;text-transform:uppercase;color:var(--coral);font-weight:700;margin-bottom:20px;justify-content:center}
+  .label::before,.label::after{content:"";width:24px;height:1.5px;background:var(--coral)}
+  h1{font-family:var(--display);font-weight:600;font-size:clamp(38px,5.6vw,62px);line-height:1.04;letter-spacing:-1.2px;margin-bottom:20px}
+  .accent{color:var(--coral);font-style:italic;font-weight:500}
+  .lede{font-size:clamp(16px,1.55vw,19px);line-height:1.55;color:var(--ink-soft);max-width:54ch;margin:0 auto}
+  .pill{display:inline-flex;align-items:center;gap:8px;margin-top:26px;padding:9px 16px;border-radius:999px;background:var(--bg-2);border:1px solid var(--rule);font-size:13px;color:var(--ink-soft)}
+  .pill svg{width:15px;height:15px;color:var(--sage)}
+
+  /* Feature: story collage + text */
+  .feature{padding:48px 0 32px}
+  .feature-grid{display:grid;grid-template-columns:minmax(0,520px) 1fr;gap:56px;align-items:center}
+  @media(max-width:900px){.feature-grid{grid-template-columns:1fr;gap:32px}}
+  .feature-img{border-radius:26px;overflow:hidden;box-shadow:0 30px 80px rgba(26,36,33,.16);border:1px solid var(--rule);background:var(--bg-2);transform:rotate(-1.2deg);transition:transform .5s}
+  .feature-img:hover{transform:rotate(0deg) scale(1.01)}
+  .feature h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,3.6vw,44px);line-height:1.08;letter-spacing:-.8px;margin-bottom:18px}
+  .feature p{color:var(--ink-soft);font-size:17px;max-width:46ch;margin-bottom:16px}
+  .steps{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin-top:22px;font-size:14.5px}
+  .steps li{display:flex;gap:10px;align-items:flex-start;color:var(--ink-soft)}
+  .steps b{flex:none;width:24px;height:24px;border-radius:50%;background:var(--ink);color:var(--bg);font-size:11.5px;display:grid;place-items:center;font-weight:600;margin-top:2px}
+  .steps li:nth-child(3n+1) b{background:var(--coral)}
+  .steps li:nth-child(3n+2) b{background:var(--mustard);color:var(--ink)}
+  .steps li:nth-child(3n) b{background:var(--sage)}
+  @media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+  /* Moments grid (editorial, mixed sizes) */
+  .moments{padding:56px 0 24px}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:28px;flex-wrap:wrap}
+  .sec-head h2{font-family:var(--display);font-weight:600;font-size:clamp(28px,3.2vw,40px);letter-spacing:-.6px;line-height:1.1}
+  .sec-head p{color:var(--ink-soft);max-width:44ch;font-size:15px}
+  .grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:220px;gap:16px}
+  .grid figure{position:relative;margin:0;border-radius:22px;overflow:hidden;background:var(--bg-2);border:1px solid var(--rule)}
+  .grid img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+  .grid figure:hover img{transform:scale(1.04)}
+  .grid figcaption{position:absolute;left:14px;bottom:14px;right:14px;display:flex;align-items:center;gap:10px}
+  .grid figcaption span{font-family:var(--display);font-size:16px;background:rgba(254,246,232,.94);color:var(--ink);padding:8px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(26,36,33,.14)}
+  .grid .w2{grid-column:span 3}.grid .w3{grid-column:span 3}.grid .h2{grid-row:span 2}
+  .grid .a{grid-column:span 3;grid-row:span 2}
+  .grid .b{grid-column:span 3}
+  .grid .c{grid-column:span 3}
+  .grid .d{grid-column:span 2}
+  .grid .e{grid-column:span 2}
+  .grid .f{grid-column:span 2}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:200px}.grid .a,.grid .b,.grid .c,.grid .d,.grid .e,.grid .f{grid-column:span 1;grid-row:span 1}.grid .a{grid-column:span 2}}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}.grid .a{grid-column:span 1}}
+
+  /* Privacy note */
+  .note{padding:40px 0 20px}
+  .note-card{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;padding:26px 30px;border-radius:22px;background:var(--bg-2);border:1px solid var(--rule)}
+  .note-card .ic{width:46px;height:46px;border-radius:14px;background:var(--sage-soft);display:grid;place-items:center;color:var(--sage)}
+  .note-card .ic svg{width:22px;height:22px}
+  .note-card h3{font-family:var(--display);font-weight:600;font-size:20px;margin-bottom:4px}
+  .note-card p{color:var(--ink-soft);font-size:14.5px}
+  @media(max-width:520px){.note-card{grid-template-columns:1fr}}
+
+  /* CTA */
+  .cta{padding:56px 0 96px;text-align:center}
+  .cta h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4vw,48px);letter-spacing:-.8px;line-height:1.08;margin-bottom:14px}
+  .cta p{color:var(--ink-soft);max-width:50ch;margin:0 auto 28px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:999px;font-size:15px;font-weight:600;background:var(--ink);color:var(--bg-2);box-shadow:0 8px 24px rgba(26,36,33,.18);transition:all .25s}
+  .btn:hover{background:var(--coral);transform:translateY(-1px);box-shadow:0 12px 28px rgba(233,122,92,.32)}
+  .btn-ghost{display:inline-flex;align-items:center;gap:8px;margin-left:12px;padding:16px 26px;border-radius:999px;font-size:15px;font-weight:500;border:1.5px solid var(--rule);transition:all .25s}
+  .btn-ghost:hover{border-color:var(--ink)}
+  @media(max-width:520px){.btn-ghost{margin:12px 0 0}}
+
+  footer{padding:32px 0;border-top:1px solid var(--rule);font-size:13.5px;color:var(--ink-soft);background:var(--bg-2);margin-top:auto}
+  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+  .foot a:hover{color:var(--coral)}
+
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav">
+    <a href="index.html" class="brand" aria-label="Dramawize home"><img src="dramawize-logo.png" alt="Dramawize" class="brand-logo" /></a>
+    <a href="index.html" class="back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to home
+    </a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <span class="label">Inside a class</span>
+    <h1>What a DramaWize session <span class="accent">looks like.</span></h1>
+    <p class="lede">Hands, props, stories and a lot of movement. Here is one ordinary Saturday in The Greens — from the back of the room to the front.</p>
+    <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> We photograph the work, not the faces — children's privacy first</span>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap feature-grid">
+    <figure class="feature-img">
+      <img src="day-at-dramawize-story.jpg" alt="A day at DramaWize — twelve moments from one session, children's faces covered with playful star stickers" />
+    </figure>
+    <div>
+      <span class="label" style="justify-content:flex-start">A day at DramaWize</span>
+      <h2>Twelve moments. <span class="accent">One transformation.</span></h2>
+      <p>Every child walks in a little unsure. Ninety minutes later they have warmed up, built a story from scraps, turned a scarf into a hundred characters, rehearsed with a partner and stood tall in front of the room.</p>
+      <ol class="steps">
+        <li><b>1</b>Day one. Watching, quiet.</li>
+        <li><b>2</b>Shy hands, hidden face.</li>
+        <li><b>3</b>Warm-up: bodies first.</li>
+        <li><b>4</b>Story cards spark ideas.</li>
+        <li><b>5</b>A poem in pieces, rebuilt.</li>
+        <li><b>6</b>One scarf, 100 characters.</li>
+        <li><b>7</b>Wand, bowl, partner: a scene.</li>
+        <li><b>8</b>Ideas land on paper.</li>
+        <li><b>9</b>A shape no one makes alone.</li>
+        <li><b>10</b>Showtime: their own scene.</li>
+        <li><b>11</b>Standing tall, filling the room.</li>
+        <li><b>12</b>One voice, heard by everyone.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="moments">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Small moments, <span class="accent">big skills.</span></h2>
+      <p>Confidence, communication, collaboration and critical thinking — built through play, not lectures.</p>
+    </div>
+    <div class="grid">
+      <figure class="a"><img src="gallery-hands.jpg" alt="Children's hands on a picture book during story circle" loading="lazy" /><figcaption><span>Hands talk first.</span></figcaption></figure>
+      <figure class="b"><img src="gallery-poem.jpg" alt="Children rebuilding a poem from paper strips on the floor" loading="lazy" /><figcaption><span>A poem, rebuilt line by line.</span></figcaption></figure>
+      <figure class="c"><img src="gallery-props.jpg" alt="A scarf, a bowl and story cards used as props" loading="lazy" /><figcaption><span>Props become characters.</span></figcaption></figure>
+      <figure class="d"><img src="gallery-ideas.jpg" alt="A child drawing ideas on paper, seen from above" loading="lazy" /><figcaption><span>Ideas land on paper.</span></figcaption></figure>
+      <figure class="e"><img src="gallery-freeze.jpg" alt="A child holding a frozen pose in the studio" loading="lazy" /><figcaption><span>Freeze. Hold. Breathe.</span></figcaption></figure>
+      <figure class="f"><img src="gallery-ensemble.jpg" alt="Children sitting in a circle around story cards" loading="lazy" /><figcaption><span>Trust the ensemble.</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="note">
+  <div class="wrap">
+    <div class="note-card">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+      <div>
+        <h3>A note on privacy</h3>
+        <p>No child's face is shown anywhere on this site or our social channels without a parent's written consent. Photos are chosen or covered to protect identity — the stars you see are deliberate. If you'd like your child featured (or never featured), just tell Manasi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Want to see it <span class="accent">in person?</span></h2>
+    <p>The first class is free. Small groups, ages 4–14, in The Greens, Dubai. No experience needed — just curiosity.</p>
+    <a href="register.html" class="btn">Book a free trial →</a>
+    <a href="https://wa.me/971585083767?text=Hi%20Manasi%2C%20I%27d%20like%20to%20book%20a%20free%20trial%20class%20at%20DramaWize" target="_blank" rel="noopener" class="btn-ghost">WhatsApp Manasi</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="y"></span> Dramawize · All rights reserved</div>
+    <div><a href="mailto:manasi@dramawize.com">manasi@dramawize.com</a> · <a href="https://wa.me/971585083767" target="_blank" rel="noopener">WhatsApp</a></div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
